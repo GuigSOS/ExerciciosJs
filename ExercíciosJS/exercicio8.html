@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Ligações Químicas</title>
+    <script src="exercicio8.js"></script>
+    <link rel="stylesheet" href="exercicios.css">
+</head>
+<body>
+    <a href="ProgramasJs.html"><h3>Home</h3></a>
+    <h1>Cálculo de Proporções de Átomos em Ligações Químicas</h1>
+
+    <h2>Ligações Iônicas</h2>
+    <label for="elMetal">Elétrons que o metal precisa perder: </label>
+    <input type="number" id="elMetal">
+    
+    <label for="elAmetal">Elétrons que o ametal precisa ganhar: </label>
+    <input type="number" id="elAmetal">
+    
+    <button onclick="calcularLigacaoIonica()">Calcular Fórmula Iônica</button>
+    
+    <h2 id="resultadoIonica"></h2>
+
+    <h2>Ligações Covalentes</h2>
+    <label for="ligacoesAtomo1">Ligações que o átomo 1 pode formar: </label>
+    <input type="number" id="ligacoesAtomo1">
+    
+    <label for="ligacoesAtomo2">Ligações que o átomo 2 pode formar: </label>
+    <input type="number" id="ligacoesAtomo2">
+    
+    <button onclick="calcularLigacaoCovalente()">Calcular Fórmula Molecular</button>
+    
+    <h2 id="resultadoCovalente"></h2>
+</body>
+</html>

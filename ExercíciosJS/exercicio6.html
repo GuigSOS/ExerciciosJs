@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Forças</title>
+    <script src="exercicio6.js"></script>
+    <link rel="stylesheet" href="exercicios.css">
+</head>
+<body>
+    <a href="ProgramasJs.html"><h3>Home</h3></a>
+    <h1>Cálculo de Forças</h1>
+
+    <h2>1. Situação 1: Força Resultante</h2>
+    <label for="massa">Massa do objeto (kg): </label>
+    <input type="number" id="massa">
+    
+    <label for="aceleracao1">Aceleração 1 (m/s²): </label>
+    <input type="number" id="aceleracao1">
+    
+    <label for="aceleracao2">Aceleração 2 (m/s²): </label>
+    <input type="number" id="aceleracao2">
+    
+    <button onclick="calcularForcaResultante()">Calcular Força Resultante</button>
+    
+    <h2 id="resultadoForca"></h2>
+    
+    <h2>2. Situação 2: Força de Ação e Reação</h2>
+    <label for="massa1">Massa do objeto 1 (kg): </label>
+    <input type="number" id="massa1">
+    
+    <label for="aceleracaoObj1">Aceleração do objeto 1 (m/s²): </label>
+    <input type="number" id="aceleracaoObj1">
+    
+    <label for="massa2">Massa do objeto 2 (kg): </label>
+    <input type="number" id="massa2">
+    
+    <label for="aceleracaoObj2">Aceleração do objeto 2 (m/s²): </label>
+    <input type="number" id="aceleracaoObj2">
+    
+    <button onclick="calcularForcaAcaoReacao()">Calcular Forças de Ação e Reação</button>
+    
+    <h2 id="resultadoAcaoReacao"></h2>
+</body>
+</html>
