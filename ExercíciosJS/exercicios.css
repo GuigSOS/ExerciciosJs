@@ -48,3 +48,22 @@ a {
     color: #4CAF50;
     font-weight: bold;
 }
+
+a:hover{
+    color:#218838;
+}
+
+.botao input{
+    font-weight: bold;
+    padding: 1%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.botao input:hover{
+        background-color: #218838;
+}

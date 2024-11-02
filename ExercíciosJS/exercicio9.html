@@ -11,13 +11,19 @@
     <a href="ProgramasJs.html"><h3>Home</h3></a>
     <h1>Análise de Valores</h1>
 
-    <label for="valor">Insira um valor: </label>
+    Insira um valor:
     <input type="number" id="valor">
-    <button onclick="adicionarValor()">Adicionar Valor</button>
-
-    <button onclick="mostrarValores()">Mostrar Todos os Valores</button>
-    <button onclick="mostrarMaiorValor()">Mostrar Maior Valor</button>
-    <button onclick="mostrarMenorValor()">Mostrar Menor Valor</button>
+<br>
+<br>
+    <div class="botao">
+        <input type="button" value="Adicionar Valor" onclick="adicionarValor()">
+    </div>
+<br>
+     <div class="botao">
+        <input type="button" value="Mostrar Todos os Valores" onclick="mostrarValores()">
+        <input type="button" value="Mostrar Maior Valor" onclick="mostrarMaiorValor()">
+        <input type="button" value="Mostrar Menor Valor" onclick="mostrarMenorValor()">
+    </div>
 
     <h2 id="resultado"></h2>
 </body>

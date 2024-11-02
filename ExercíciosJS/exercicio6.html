@@ -12,34 +12,39 @@
     <h1>Cálculo de Forças</h1>
 
     <h2>1. Situação 1: Força Resultante</h2>
-    <label for="massa">Massa do objeto (kg): </label>
+    
+    Massa do objeto (kg):
     <input type="number" id="massa">
     
-    <label for="aceleracao1">Aceleração 1 (m/s²): </label>
+    Aceleração 1 (m/s²):
     <input type="number" id="aceleracao1">
     
-    <label for="aceleracao2">Aceleração 2 (m/s²): </label>
+    Aceleração 2 (m/s²): 
     <input type="number" id="aceleracao2">
     
-    <button onclick="calcularForcaResultante()">Calcular Força Resultante</button>
+    <div class="botao">
+    <input type="button" value="Calcular Força Resultante" onclick="calcularForcaResultante()">
+</div>
     
     <h2 id="resultadoForca"></h2>
     
     <h2>2. Situação 2: Força de Ação e Reação</h2>
-    <label for="massa1">Massa do objeto 1 (kg): </label>
+    Massa do objeto 1 (kg):
     <input type="number" id="massa1">
     
-    <label for="aceleracaoObj1">Aceleração do objeto 1 (m/s²): </label>
+    Aceleração do objeto 1 (m/s²):
     <input type="number" id="aceleracaoObj1">
     
-    <label for="massa2">Massa do objeto 2 (kg): </label>
+    Massa do objeto 2 (kg): 
     <input type="number" id="massa2">
     
-    <label for="aceleracaoObj2">Aceleração do objeto 2 (m/s²): </label>
+    Aceleração do objeto 2 (m/s²): 
     <input type="number" id="aceleracaoObj2">
     
-    <button onclick="calcularForcaAcaoReacao()">Calcular Forças de Ação e Reação</button>
-    
+    <div class="botao">
+    <input type="button" value="Calcular Forças de Ação e Reação" onclick="calcularForcaAcaoReacao()">
+</div>
+
     <h2 id="resultadoAcaoReacao"></h2>
 </body>
 </html>

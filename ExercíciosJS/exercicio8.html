@@ -12,25 +12,29 @@
     <h1>Cálculo de Proporções de Átomos em Ligações Químicas</h1>
 
     <h2>Ligações Iônicas</h2>
-    <label for="elMetal">Elétrons que o metal precisa perder: </label>
-    <input type="number" id="elMetal">
+    Elétrons que o metal precisa perder: 
+    <input type="number" id="elM">
     
-    <label for="elAmetal">Elétrons que o ametal precisa ganhar: </label>
-    <input type="number" id="elAmetal">
+    Elétrons que o ametal precisa ganhar:
+    <input type="number" id="elA">
     
-    <button onclick="calcularLigacaoIonica()">Calcular Fórmula Iônica</button>
+    <div class="botao">
+        <input type="button" value="Calcular Fórmula Iônica" onclick="calcularLigacaoIonica()">
+    </div>
     
-    <h2 id="resultadoIonica"></h2>
+    <h2 id="resultIon"></h2>
 
     <h2>Ligações Covalentes</h2>
-    <label for="ligacoesAtomo1">Ligações que o átomo 1 pode formar: </label>
-    <input type="number" id="ligacoesAtomo1">
+    Ligações que o átomo 1 pode formar:
+    <input type="number" id="ligaAtm1">
     
-    <label for="ligacoesAtomo2">Ligações que o átomo 2 pode formar: </label>
-    <input type="number" id="ligacoesAtomo2">
+    Ligações que o átomo 2 pode formar:
+    <input type="number" id="ligaAtm2">
+
+    <div class="botao">
+        <input type="button" value="Calcular Fórmula Molecular" onclick="calcularLigacaoCovalente()">
+    </div>
     
-    <button onclick="calcularLigacaoCovalente()">Calcular Fórmula Molecular</button>
-    
-    <h2 id="resultadoCovalente"></h2>
+    <h2 id="resultCova"></h2>
 </body>
 </html>

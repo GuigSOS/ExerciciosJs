@@ -1,37 +1,36 @@
 function calcularLigacaoIonica() {
-    // Obtendo os valores dos inputs
-    elMetal = parseInt(document.getElementById('elMetal').value);
-    elAmetal = parseInt(document.getElementById('elAmetal').value);
+
+    elM = parseInt(document.getElementById('elM').value);
+    elA = parseInt(document.getElementById('elAm').value);
     
-    // Verificando se os valores são válidos
-    if (isNaN(elMetal) || isNaN(elAmetal) || elMetal <= 0 || elAmetal <= 0) {
-        document.getElementById('resultadoIonica').innerText = 'Por favor, insira valores válidos.';
+    if (isNaN(elM) || isNaN(elA) || elM <= 0 || elA <= 0) {
+        document.getElementById('resultIon').innerText = 'Por favor, insira valores válidos.';
         return;
     }
 
-    // Cálculo da fórmula iônica
-    proporcaoMetal = elAmetal; // O número de elétrons que o ametal ganha
-    proporcaoAmetal = elMetal; // O número de elétrons que o metal perde
+    proporM = elA;
+    proporA = elM;
 
-    // Exibindo o resultado
-    document.getElementById('resultadoIonica').innerText = `Fórmula iônica: M${proporcaoMetal}A${proporcaoAmetal} (${proporcaoAmetal}:${proporcaoMetal})`;
+    document.getElementById('resultIon').innerText = `Fórmula iônica: M${proporM}A${proporA} (${proporA}:${proporM})`;
 }
 
 function calcularLigacaoCovalente() {
-    // Obtendo os valores dos inputs
-    ligacoesAtomo1 = parseInt(document.getElementById('ligacoesAtomo1').value);
-    ligacoesAtomo2 = parseInt(document.getElementById('ligacoesAtomo2').value);
+
+    ligaAtm1 = parseInt(document.getElementById('ligaAtm1').value);
+    ligaAtm2 = parseInt(document.getElementById('ligaAtm2').value);
     
-    // Verificando se os valores são válidos
-    if (isNaN(ligacoesAtomo1) || isNaN(ligacoesAtomo2) || ligacoesAtomo1 <= 0 || ligacoesAtomo2 <= 0) {
-        document.getElementById('resultadoCovalente').innerText = 'Por favor, insira valores válidos.';
+
+    if (isNaN(ligaAtm1) || isNaN(ligaAtm2) || ligaAtm1 <= 0 || ligaAtm2 <= 0) {
+        document.getElementById('resultCova').innerText = 'Por favor, insira valores válidos.';
         return;
     }
 
-    // Cálculo da fórmula molecular
-    numeroDeX = ligacoesAtomo2; // Átomo 2 (ex: Hidrogênio)
-    numeroDeY = Math.ceil(ligacoesAtomo1 / 2); // Átomo 1 (ex: Oxigênio)
+    if (ligaAtm1%2!=0){
+        ligaAtm1=ligaAtm1+1
+    }
+    numX = ligaAtm2;
+    numY = ligaAtm1 / 2;
 
-    // Exibindo o resultado
-    document.getElementById('resultadoCovalente').innerText = `Fórmula molecular: X${numeroDeX}Y${numeroDeY} (${numeroDeX} átomos de X para ${numeroDeY} de Y)`;
+
+    document.getElementById('resultCova').innerText = `Fórmula molecular: X${numX}Y${numY} (${numX} átomos de X para ${numY} de Y)`;
 }

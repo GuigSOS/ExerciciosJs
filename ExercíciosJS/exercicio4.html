@@ -11,14 +11,15 @@
     <a href="ProgramasJs.html"><h3>Home</h3></a>
     <h1>Cálculo de Gasto de Combustível</h1>
     
-    <label for="quilometragem">Quilometragem percorrida (km): </label>
+    Quilometragem percorrida (km):
     <input type="number" id="quilometragem">
     
-    <label for="valorCombustivel">Valor do combustível (R$/litro): </label>
+    Valor do combustível (R$/litro):
     <input type="number" id="valorCombustivel">
     
-    <button onclick="calcularGasto()">Calcular Gasto</button>
-    
+    <div class="botao">
+    <input type="button" value="Calcular Gasto" onclick="calcularGasto()">
+</div>
     <h2 id="resultado"></h2>
 </body>
 </html>

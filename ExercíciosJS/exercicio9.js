@@ -1,13 +1,12 @@
-let valores = [];
+valores = [];
 
 function adicionarValor() {
-    const valorInput = document.getElementById('valor');
-    const valor = parseInt(valorInput.value);
+    valorInput = document.getElementById('valor');
+    valor = parseInt(valorInput.value);
 
-    // Verificando se o valor é válido
     if (!isNaN(valor)) {
         valores.push(valor);
-        valorInput.value = ''; // Limpa o campo de entrada
+        valorInput.value = '';
         atualizarListaValores();
     } else {
         alert('Por favor, insira um valor válido.');
@@ -16,9 +15,8 @@ function adicionarValor() {
 
 function atualizarListaValores() {
     listaValores = document.getElementById('listaValores');
-    listaValores.innerHTML = ''; // Limpa a lista atual
+    listaValores.innerHTML = '';
 
-    // Adiciona todos os valores à lista
     for (let i = 0; i < valores.length; i++) {
         li = document.createElement('li');
         li.textContent = valores[i];
@@ -28,16 +26,16 @@ function atualizarListaValores() {
 
 function mostrarValores() {
     resultado = document.getElementById('resultado');
-    resultado.textContent = `Valores inseridos: ${valores.join(', ')}`;
+    document.getElementById('resultado').innerText = `Valores inseridos: ${valores.join(', ')}`;
 }
 
 function mostrarMaiorValor() {
     resultado = document.getElementById('resultado');
     if (valores.length > 0) {
         maior = Math.max(...valores);
-        resultado.textContent = `Maior valor: ${maior}`;
+        document.getElementById('resultado').innerText = `Maior valor: ${maior}`;
     } else {
-        resultado.textContent = 'Nenhum valor inserido.';
+        document.getElementById('resultado').innerText = 'Nenhum valor inserido.';
     }
 }
 
@@ -45,8 +43,8 @@ function mostrarMenorValor() {
     resultado = document.getElementById('resultado');
     if (valores.length > 0) {
         menor = Math.min(...valores);
-        resultado.textContent = `Menor valor: ${menor}`;
+        document.getElementById('resultado').innerText = `Menor valor: ${menor}`;
     } else {
-        resultado.textContent = 'Nenhum valor inserido.';
+        document.getElementById('resultado').innerText = 'Nenhum valor inserido.';
     }
 }
